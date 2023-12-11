@@ -1,0 +1,22 @@
+TPA:
+  USAGE: "<#ffff33>Lyzard</#ffff33> » Utilizza /tpa <giocatore>"
+  CANT_SELF: "<#ffff33>Lyzard</#ffff33> » Non puoi mandare una richiesta di Teletrasporto a te stesso."
+  ALREADY_SENT: "<#ffff33>Lyzard</#ffff33> » Aspetta prima di rimandare una richiesta di tpa a questo giocatore."
+  SUCCESS: "<#ffff33>Lyzard</#ffff33> » Hai inviato una richiesta di Teletrasporto a <#ffff33{player}</#ffff33."
+  TARGET_RECEIVED: "Hai ricevuto una richiesta di Teletrasporto da <#ffff33{player}</#ffff33"
+  TARGET_ACCEPT: "<#00cc00>[CLICCA PER ACCETTARE]</#00cc00>"
+  TARGET_ACCEPT_HOVER: "<#00cc00>CLICCA PER ACCETTARE</#00cc00>"
+
+ERRORS:
+  PLAYER-NOT-ONLINE: "Lyzard » il giocatore non è online al momento."
+
+TPA_HERE:
+  USAGE: "<#ffff33>Lyzard</#ffff33> » Utilizza /tpahere <giocatore>"
+  TARGET_RECEIVED: "Hai ricevuto una richiesta per Teletrasportarti da <#ffff33{player}</#ffff33"
+  TARGET_ACCEPT: "<#00cc00>[ACCETTA]</#00cc00>"
+  TARGET_ACCEPT_HOVER: "<#00cc00>CLICCA PER ACCETTARE</#00cc00>"
+
+TPA_ACCEPT:
+  USAGE: "<#ffff33>Lyzard</#ffff33> » Utilizza /tpaccept <giocatore>"
+  NO_REQUEST: "<#ffff33>Lyzard</#ffff33> » Quel player non ti ha mandato una richiesta di Teletrasporto."
+  ACCEPTED: "<#ffff33>Lyzard</#ffff33> » Richiesta di teletrasporto <#00cc00>accettata</#00cc00>"

@@ -1,0 +1,4 @@
+name: FoliaTpa
+version: '1.0.0'
+main: me.jeyzer.FoliaTpa
+api-version: '1.20'
