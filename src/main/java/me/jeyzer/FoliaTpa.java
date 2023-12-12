@@ -1,10 +1,9 @@
 package me.jeyzer;
 
-import co.aikar.commands.PaperCommandManager;
 import lombok.Getter;
-import me.jeyzer.commands.TpAcceptAikar;
-import me.jeyzer.commands.TpaAikar;
-import me.jeyzer.commands.TpahereAikar;
+import me.jeyzer.commands.TpaCommand;
+import me.jeyzer.commands.TpacceptCommand;
+import me.jeyzer.commands.TpahereCommand;
 import me.jeyzer.config.Configuration;
 import me.jeyzer.handler.TeleportRequests;
 import me.jeyzer.listener.TeleportListener;
@@ -23,14 +22,14 @@ public class FoliaTpa extends JavaPlugin {
         instance = this;
         requests = new TeleportRequests();
         configuration = new Configuration(this);
+        registerCommands();
         getServer().getPluginManager().registerEvents(new TeleportListener(requests), this);
     }
 
     private void registerCommands() {
-        PaperCommandManager manager = new PaperCommandManager(this);
-        manager.registerCommand(new TpaAikar(requests));
-        manager.registerCommand(new TpahereAikar(requests));
-        manager.registerCommand(new TpAcceptAikar(requests));
+        getCommand("tpa").setExecutor(new TpaCommand(requests));
+        getCommand("tpaccept").setExecutor(new TpacceptCommand(requests));
+        getCommand("tpahere").setExecutor(new TpahereCommand(requests));
     }
 
     @Override

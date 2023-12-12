@@ -1,6 +1,5 @@
 package me.jeyzer.handler.model;
 
-import co.aikar.commands.ACFFoliaScheduler;
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
 import lombok.Getter;
 
@@ -10,8 +9,6 @@ import me.jeyzer.handler.TeleportRequests;
 import me.jeyzer.handler.struct.TeleportType;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitTask;
 
 import java.util.UUID;
 

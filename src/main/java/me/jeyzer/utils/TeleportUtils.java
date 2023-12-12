@@ -40,7 +40,7 @@ public final class TeleportUtils {
         int initialY = location.getBlockY();
         int initialZ = location.getBlockZ();
 
-        MutableInt cooldown = new MutableInt();
+        MutableInt cooldown = new MutableInt(seconds);
 
         teleports.put(player.getUniqueId(),
            Bukkit.getServer().getRegionScheduler().runAtFixedRate(FoliaTpa.getInstance(), player.getLocation(), finalTask -> {
@@ -67,7 +67,7 @@ public final class TeleportUtils {
 
                handleTeleportProgress(player, cooldown.intValue());
                cooldown.decrement();
-           }, 0L, 20L));
+           }, 1L, 20L));
     }
 
     private static boolean hasPlayerMoved(Player player, int initialX, int initialY, int initialZ) {
@@ -90,7 +90,7 @@ public final class TeleportUtils {
     }
 
     private static void handleTeleportSuccess(Player player, Location toLocation) {
-        player.teleport(toLocation);
+        player.teleportAsync(toLocation);
 
         Title title = Title.title(
            Messages.toComponent("TELEPORT_SUCCESS.TITLE"),

@@ -8,14 +8,8 @@ import me.jeyzer.utils.Search;
 @RequiredArgsConstructor
 public enum Config {
 
-    HOME_GUI("home-gui"),
-    REQUEST_GUI("request-gui"),
-    RESET_ZONE("reset-zone"),
     CONFIG("config"),
-    LANGUAGE("messages"),
-    KITS("kits"),
-    GEMS_SHOP("gems-shop"),
-    WARPS("warps");
+    LANGUAGE("messages");
 
     private final String name;
 
